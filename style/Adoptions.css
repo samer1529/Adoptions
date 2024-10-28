@@ -1,0 +1,56 @@
+/* Basic Styling */
+body {
+  background-color: #F0F4F8;
+  color: #1D1E2C;
+  font-family: Arial, sans-serif;
+}
+
+header, footer {
+  background-color: #E75480;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #E6E2AF;
+  color: #333;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+main {
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns for large screens */
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Define grid positioning for images */
+.wide {
+  grid-column: span 2; /* Make this image span 2 columns */
+}
+
+.long {
+  grid-row: span 2; /* Make this image span 2 rows */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 750px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns on smaller screens */
+  }
+
+  .wide, .long {
+    grid-column: span 2; /* Span across both columns on smaller screens */
+  }
+}
+
+}

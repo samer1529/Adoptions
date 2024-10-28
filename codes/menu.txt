@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adoptions - Chez Fur</title>
+  <link rel="stylesheet" href="style/Adoptions.css">
+</head>
+<body>
+  <header>
+    <h1>Chez Fur</h1>
+    <nav class="navcontainer">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="yourhosts.html">Your Hosts</a>
+      <a href="adoptions.html">Adoptions</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Alumni Cats</h2>
+    <p>These are the images of cats that were adopted by qualified cat-parents after being a Host at Chez Fur.</p>
+
+    <section class="grid-container">
+      <div class="grid-item wide"><img src="images/wide-cat.jpg" alt="Wide Cat Image"></div>
+      <div class="grid-item long"><img src="images/long-cat.jpg" alt="Long Cat Image"></div>
+      <div class="grid-item square"><img src="images/square-cat1.jpg" alt="Square Cat Image"></div>
+      <div class="grid-item square"><img src="images/square-cat2.jpg" alt="Square Cat Image"></div>
+      <div class="grid-item square"><img src="images/square-cat3.jpg" alt="Square Cat Image"></div>
+      <div class="grid-item square"><img src="images/square-cat4.jpg" alt="Square Cat Image"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Chez Fur</p>
+  </footer>
+</body>
+</html>

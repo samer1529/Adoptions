@@ -1,0 +1,51 @@
+/* Basic Styling */
+body {
+  background-color: #F0F4F8;
+  color: #1D1E2C;
+  font-family: Arial, sans-serif;
+}
+
+header, footer {
+  background-color: #E75480;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #E6E2AF;
+  color: #333;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Grid Layout for Large Screens */
+.grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns by default */
+}
+
+/* Wide image takes two columns */
+.grid-item.wide {
+  grid-column: span 2; /* Spans across two columns */
+}
+
+/* Long image takes two rows */
+.grid-item.long {
+  grid-row: span 2; /* Spans across two rows */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 750px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+  }
+}
